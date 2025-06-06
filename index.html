@@ -5,343 +5,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venkatesh | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
     <div class="wrapper">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo-container">
-                    <img src="letter.jpg" class="logo">
-                    <div class="logo-text">enkatesh</div>
-                </div>
-                <div class="nav-items">
-                    <div class="box"><a href="#projects">Projects</a></div>
-                    <div class="box"><a href="#skills">Skills</a></div>
-                    <div class="box"><a href="#contactme">Contactme</a></div>
-                </div>
-            </div>
-        </div>
-       <div class="hero-section">
-        <div class="faded-text">Venkatesh</div>
-        <div class="hero-section-left">
-            <div class="hero-section-heading">Hi!! Venkatesh</div>
-                <div class="hero-section-heading hero-section-sub-heading">
-                    Iam a <span class="role"></span>
-                </div>
-                <div class="hero-section-description">
-                    I'm a software developer, and my portfolio website showcases my journey in the field. Explore it to learn more about my experience and projects!
-                </div>
-                <div class="btn-pink" id="btn-bottom">Hire me</div>
-
-            
-       
-        </div>
-        <div class="hero-section-right">
-            <div class="absolute icons icon-dots">
-                <img src="https://cdn-icons-png.flaticon.com/512/565/565572.png" alt="Dots" width="30px"/>
-
-            </div>
-            <div class="absolute icons icon-cube">
-                <img src="https://cdn-icons-png.flaticon.com/512/892/892481.png" alt="Cube"width="30px"/>
-
-            </div>
-            <div class="absolute icons icon-circle">
-                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Circle"width="30px"/>
-
-            </div>
-            <div class="absolute icons icon-zigzag">
-                <img src="https://cdn-icons-png.flaticon.com/512/565/565535.png" alt="Zigzag" width="30px"/>
-            </div>
-            <div class="absolute icons icon-plus">
-                <img src="https://cdn-icons-png.flaticon.com/512/1236/1236014.png" alt="Plus" width="30px"/>
-            </div>
-            <div class="user-image">
-                <img src="image.jpg" alt="profile" width="180px"/>
-            </div>
-        </div>
-        
-            
-       </div>
-    </div>
-    <div class="project-section">
-        <h2 class="page-header"id="projects">Projects</h2>
-        
-        <div class="project-container">
-            <div class="project-card" id="project1">
-                <div class="project-number project-number-right">01</div>
-                <div class="project-content project-content-right">
-                    
-                    <div class="project-skills-container">
-                        <img class="project-skill" src="html.png" alt="">
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="50px" width="50px"/>
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" >
-                        <img class="project-skill" src="jsp.png" alt="" height="40px">
-                        
-                        
+        <header class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-container">
+                        <div class="logo-text">Venkatesh</div>
                     </div>
-
-                    <h2 class="project-heading">Tint & Orange</h2>
-                    
-                    <div class="project-subHeading">
-                        It is a bike modification company which provides you sheets to protect your car from scratch.
-                    </div>
-
-                    <div class="btn-grp">
-                        <button class="btn-pink btn-project">Read More</button>
-                        <a href="#">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                        </a>
-                        <a href="#">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                        </a>
-                    </div>
-
+                    <nav class="nav-items">
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <label for="theme-toggle" class="mode-toggle">
+                            <i class="fas fa-sun light-icon"></i>
+                            <i class="fas fa-moon dark-icon"></i>
+                        </label>
+                    </nav>
+                    <label class="hamburger" for="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </label>
                 </div>
             </div>
-            <div class="project-card" id="project2">
-                <div class="project-number project-number-left">02</div>
-                <div class="project-content project-content-left">
-                    
-                    <div class="project-skills-container">
-                        <img class="project-skill" src="html.png" alt="">
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="50px" width="50px"/>
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" >
-                        
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
-                        
+        </header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <nav class="mobile-nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <label for="theme-toggle" class="mode-toggle mobile-mode-toggle">
+                <i class="fas fa-sun light-icon"></i>
+                <i class="fas fa-moon dark-icon"></i>
+            </label>
+        </nav>
+        <section class="hero-section">
+            <div class="faded-text">Venkatesh</div>
+            <div class="container hero-content">
+                <div class="hero-section-left">
+                    <h1 class="hero-section-heading">Hi, I'm Venkatesh</h1>
+                    <h2 class="hero-section-sub-heading">Computer Science Student | Aspiring Software Engineer</h2>
+                    <p class="hero-section-description">
+                        Passionate about crafting innovative solutions through code. Explore my projects and skills to see my journey in web development and software engineering.
+                    </p>
+                    <a href="#contact" class="btn-pink">Get in Touch</a>
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="https://cdn-icons-png.flaticon.com/512/565/565572.png" alt="Dots" width="30px"/>
                     </div>
-                    <h2 class="project-heading">Tourist Hoo Saako</h2>
-                    
-                    <div class="project-subHeading">
-                        It is a Tour Page where you can choose any Place To Visit.
+                    <div class="absolute icons icon-cube">
+                        <img src="https://cdn-icons-png.flaticon.com/512/892/892481.png" alt="Cube" width="30px"/>
                     </div>
-
-                    <div class="btn-grp">
-                        <button class="btn-pink btn-project">Read More</button>
-                        <a href="#">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                        </a>
-                        <a href="#">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                        </a>
+                    <div class="absolute icons icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Circle" width="30px"/>
                     </div>
-
+                    <div class="absolute icons icon-zigzag">
+                        <img src="https://cdn-icons-png.flaticon.com/512/565/565535.png" alt="Zigzag" width="30px"/>
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1236/1236014.png" alt="Plus" width="30px"/>
+                    </div>
+                    <div class="user-image">
+                        <img src="image.jpg" alt="Profile" width="150px"/>
+                    </div>
                 </div>
             </div>
-            <div class="project-card" id="project3">
-                <div class="project-number project-number-right">03</div>
-                <div class="project-content project-content-right">
-                    
-                    <div class="project-skills-container">
-                        <img class="project-skill" src="html.png" alt="">
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="50px" width="50px"/>
-                         <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" >
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
-                        
+        </section>
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-heading">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm Venkatesh, a third-year B.Tech student in Computer Science, passionate about building user-friendly and innovative web applications. With a strong foundation in programming and a keen eye for design, I specialize in creating responsive interfaces using modern web technologies.
+                        </p>
+                        <p>
+                            My goal is to contribute to impactful projects while continuously expanding my skills in software engineering and problem-solving.
+                        </p>
                     </div>
-
-                    <h2 class="project-heading">Player Banavoo</h2>
-                    
-                    <div class="project-subHeading">
-                        It is a cricket Equipments  Store where you can view And Buy Them.
+                    <div class="about-image">
+                        <img src="image.jpg" alt="Profile" />
                     </div>
-
-                    <div class="btn-grp">
-                        <button class="btn-pink btn-project">Read More</button>
-                        <a href="#">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                        </a>
-                        <a href="#">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                        </a>
-                    </div>
-
                 </div>
             </div>
-            <div class="project-card" id="project4">
-                <div class="project-number project-number-left">04</div>
-                <div class="project-content project-content-left">
-                    
-                    <div class="project-skills-container">
-                        <img class="project-skill" src="html.png" alt="">
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="50px" width="50px"/>
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" >
+        </section>
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-heading">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+                        <h3>HTML</h3>
                     </div>
-
-                    <h2 class="project-heading">Saari Movies Dheko</h2>
-                    
-                    <div class="project-subHeading">
-                        It is a  NetFlix clone page where you can Watch all the latest Movies & Series.
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+                        <h3>CSS</h3>
                     </div>
-
-                    <div class="btn-grp">
-                        <button class="btn-pink btn-project">Read More</button>
-                        <a href="#">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                        </a>
-                        <a href="#">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                        </a>
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                        <h3>JavaScript</h3>
                     </div>
-
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" />
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C++" />
+                        <h3>C++</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+                        <h3>React</h3>
+                    </div>
                 </div>
             </div>
-            <div class="project-card" id="project5">
-                <div class="project-number project-number-right">05</div>
-                <div class="project-content project-content-right">
-                    
-                    <div class="project-skills-container">
-                        <img class="project-skill" src="html.png" alt="">
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="50px" width="50px"/>
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" >
-                        <img class="project-skill" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
-                        
+        </section>
+        <section class="project-section" id="projects">
+            <div class="container">
+                <h2 class="section-heading">Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card" style="background-image: url('bike.png');">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <h3 class="project-heading">Tint & Orange</h3>
+                            <p class="project-description">A bike modification platform offering protective sheets to shield vehicles from scratches.</p>
+                            <div class="project-skills">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                            </div>
+                            <div class="btn-group">
+                                <a href="#" class="btn-pink">Read More</a>
+                                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <h2 class="project-heading">Count Karawooh</h2>
-                    
-                    <div class="project-subHeading">
-                        It is a  Basic Counter which provides you sheets to protect your car from scratch.
+                    <div class="project-card" style="background-image: url('tour.png');">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <h3 class="project-heading">Tourist Hoo Saako</h3>
+                            <p class="project-description">A travel platform to explore and choose your next destination.</p>
+                            <div class="project-skills">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+                            </div>
+                            <div class="btn-group">
+                                <a href="#" class="btn-pink">Read More</a>
+                                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="btn-grp">
-                        <button class="btn-pink btn-project">Read More</button>
-                        <a href="#">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                        </a>
-                        <a href="#">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                        </a>
+                    <div class="project-card" style="background-image: url('netflix.png');">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <h3 class="project-heading">Saari Movies Dheko</h3>
+                            <p class="project-description">A Netflix-inspired platform for streaming movies and series.</p>
+                            <div class="project-skills">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                            </div>
+                            <div class="btn-group">
+                                <a href="#" class="btn-pink">Read More</a>
+                                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
-            
-        </div>
-    </div>
-    <div id="skills" class="container skills-container">
-        <div class="skill-fade-text">Skills</div>
-
-        <div class="skill-container-left">
-            <h2 class="skill-heading">
-                <span class="caps">M</span>e and <br>My Tech Stack
-            </h2>
-            <div class="skill-subHeading">
-                <p>
-                    Hi everyone, I'm Venkatesh.<br>
-                    I'm a passionate Frontend Developer with 2 years of hands-on learning and project-building experience. Currently, I'm pursuing my B.Tech, and I'm in my 3rd year of study.
-                    Over the past two years, I've been deeply engaged in frontend development, continuously learning and improving my skills. I have solid experience working with React.js, which I use to build dynamic and responsive user interfaces. I'm also proficient in JavaScript, HTML, and CSS, and I love crafting beautiful, clean UI designs using Tailwind CSS.
-                    
-                </p>
-                <p>
-                    I'm always eager to learn new technologies, collaborate with others, and contribute to exciting projects. I'm currently looking to grow further by working on real-world applications and gaining more hands-on experience in frontend frameworks and tools.
-                </p>
+        </section>
+        <section class="education-section" id="education">
+            <div class="container">
+                <h2 class="section-heading">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>B.Tech in Computer Science</h3>
+                            <p>XYZ University | 2022 - Present</p>
+                            <p>Currently pursuing a Bachelor's degree with a focus on software engineering, data structures, and web development.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>High School</h3>
+                            <p>ABC High School | 2020 - 2022</p>
+                            <p>Graduated with distinction, specializing in Mathematics and Computer Science.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="skill-container-right">
-            <img src="blob.jpg" class="blob-style" alt="Blob Shape"/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="skills-logo" alt="HTML" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="skills-logo" alt="CSS" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="skills-logo" alt="JavaScript" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="skills-logo" alt="React" />  
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="skills-logo" alt="Tailwind CSS" />
-             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" class="skills-logo" alt="Git" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="skills-logo" alt="GitHub" />
-           
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skills-logo" />
-            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" class="skills-logo" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo" class="skills-logo" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" class="skills-logo" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skills-logo" />
-           
-            
-        </div>
-        
-    
-    </div>
-
-        <div class="container-form-container" >
-            <div class="container"id="contactme">
-                <h1 class="contactus-heading">Contact Me</h1>
-                <p class="contactus-sub-heading">Questions, Thoughts, Or Just Want To Say Hello?</p>
-                <div class="contactus-form-container">
-                <form class="form"action="mailto:venkyismjamalapurapu09@gmail.com" method="post">
-                    <div class="formfield-container">
-                        <input class="formfield" type="text" name="name" id="name" placeholder="Enter your name">
-                    <input class="formfield" type="email" name="email" id="email" placeholder="Enter your email address">
-                    <input class="formfield" type="text" name="subject" id="subject" placeholder="Enter your subject">
-                    <textarea name="message" id="message" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
-                    <div>
-                        <button type="submit" class="btn-pink" id="submit-btn">
-                            Send Message <i class="submit-icon fa fa-paper-plane"></i>
-                        </button>
-                    </div>
-                    </div>
-                    
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-heading">Contact Me</h2>
+                <p class="contact-subheading">Let's connect to discuss projects or opportunities!</p>
+                <form class="contact-form">
+                    <input type="text" class="form-field" placeholder="Your Name" required>
+                    <input type="email" class="form-field" placeholder="Your Email" required>
+                    <input type="text" class="form-field" placeholder="Subject" required>
+                    <textarea class="form-field textarea" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-pink">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/venkatesh-jamalapurapu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/venkatesh14081/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:venkyismjamalapurapu09@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
             </div>
-            
-            </div>
-            
-        </div>
+        </section>
         <footer>
             <div class="container">
-                <div class="footer-wrapper">
+                <div class="footer-content">
                     <div class="footer-faded-text">Venkatesh</div>
-                    <div class="link-wrapper">
-                            <div>
-                                <a href="#projects">Projects</a>
-                            </div>
-                            <div>
-                                <a href="#skills">Skills</a>
-                            </div>
-                            <div>
-                                <a href="#contactme">Contactme</a>
-                            </div>
-
-                    </div>
-                    <div class="icon-wrapper">
-                            <a href="https://www.linkedin.com/in/venkatesh-jamalapurapu/" target="_blank">                       
-                                <i class="fa-brands fa-linkedin icon" href=""></i>
-                            </a>
-                            <a href="https://github.com/venkatesh14081/" target="_blank">
-                                <i class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="https://x.com/VJamalapur53391/" target="_blank">
-                                <i class="fa-brands fa-twitter icon"></i>
-                            </a>
-                            <a href="https://www.instagram.com/venkatesh_jamalapurapu" target="_blank">
-                                <i class="fa-brands fa-instagram icon" ></i>
-                            </a>
-                            <a href="#contactme" target="_blank" >
-                                <i class="fa-regular fa-envelope icon"></i>
-                            </a>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
         </footer>
-    
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-<script>
-    var typeData = new Typed(".role", {
-        strings: [
-            "Full Stack Developer",
-            "Web Developer",
-            "UI-UX Designer",
-            "Backend Developer",
-            "Coder"
-        ],
-        loop: true,
-        typeSpeed: 100,
-        backSpeed: 80,
-        backDelay: 1000,
-    });
-</script>
+    </div>
 </body>
 </html>
